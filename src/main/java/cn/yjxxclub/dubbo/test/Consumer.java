@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Consumer {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"dubbo-consumer.xml"});
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"dubbo/dubbo-consumer.xml"});
         context.start();
 
         DemoService demoService = (DemoService) context.getBean("demoService"); // 获取远程服务代理

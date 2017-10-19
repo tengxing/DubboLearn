@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class Str {
-    @Reference(version="1.0.0")
+    @Reference
     DemoService demoService; // 获取远程服务代理
 
     public void test(){
